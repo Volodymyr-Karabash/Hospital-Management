@@ -4,6 +4,7 @@ from .views import ExpenseViewSet, StaffViewSet, DepartmentViewSet, PayrollViewS
 
 router = routers.DefaultRouter()
 router.register('staff', StaffViewSet, 'Staff'),
+router.register('department', DepartmentViewSet, 'Department'),
 router.register('expense', ExpenseViewSet, 'Expense'),
 router.register('payroll', PayrollViewSet, 'Payroll'),
 router.register('message', MessageViewSet, 'Message'),
